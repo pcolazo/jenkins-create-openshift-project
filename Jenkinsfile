@@ -6,7 +6,7 @@ pipeline{
     // START PIPELINE
     agent any
     parameters {
-        choice(choices: ['qa', 'pre', 'prod'], description: 'Elija el Ambiente donde quiere crear el PROJECTO', name: 'AMBIENTE')
+        choice(choices: ['qa', 'pre', 'prod'], description: 'Elija el Ambiente donde quiere crear el PROYECTO', name: 'AMBIENTE')
         string(name: 'PROYECTO' , defaultValue: '', description: 'Nombre del nuevo Proyecto.')
        }
     environment {
